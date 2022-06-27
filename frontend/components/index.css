@@ -1,0 +1,67 @@
+.lottery-wrap {
+    width: 554px;
+    max-width: 554px;
+    border: 2px solid #000;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 60px;
+    display: flex;
+}
+.ticker-wrap {
+    width: 110px;
+    text-align: center;
+    border: 2px black solid;
+    cursor: pointer;
+}
+.selected-ticket {
+    background-color: black;
+}
+.select-ticket {
+    background-color: green;
+}
+
+.win_ticket {
+    background-color: red;
+}
+
+.win_double_ticket {
+    background-color: orange!important;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.loading-spinner {
+    width: 150px;
+    height: 150px;
+    border: 15px solid #f3f3f3; /* Light grey */
+    border-top: 15px solid #383636; /* Black */
+    border-radius: 50%;
+    animation: spinner 1.5s linear infinite;
+}
+.spinner-container {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.load-title {
+    text-align: center;
+    font-weight: bold;
+    color: #383636;
+    font-size: 30px;
+}
+.game-button {
+    margin-top: 60px;
+}
+
+.finish-text {
+    font-weight: bold;
+    color: black;
+    font-size: 22px;
+}
